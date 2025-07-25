@@ -519,8 +519,9 @@
     <nav class="navbar">
         <div class="nav-container">
             <div class="logo">
-                <div class="logo-icon">LN</div>
-                <div class="logo-text">LaNier</div>
+                <div class="logo">
+   <img src="logo.png" alt="LaNier Business Intelligence" style="height: 40px; width: auto;">
+</div>
             </div>
             <div class="nav-links">
                 <a href="#assessment" class="nav-link">Assessment</a>
@@ -533,19 +534,19 @@
     <section class="hero">
         <div class="container">
             <h1>LaNier Business Intelligence</h1>
-            <p>Transform your business with advanced LaNier analysis and strategic insights. Get comprehensive diagnostics in minutes, not months.</p>
+            <p>Transform your business with advanced AI analysis and strategic insights. Get comprehensive diagnostics in minutes, not months.</p>
             <a href="#assessment" class="cta-button">Start Your Free Analysis</a>
         </div>
     </section>
 
     <section class="features" id="features">
         <div class="container">
-            <h2 class="section-title">Why Choose LaNier?</h2>
+            <h2 class="section-title">Why Fortune 500 Companies Choose Us</h2>
             <div class="features-grid">
                 <div class="feature-card">
                     <div class="feature-icon">📊</div>
                     <h3 class="feature-title">Enterprise-Grade Analysis</h3>
-                    <p class="feature-description">Sophisticated LaNier algorithms designed for Fortune 500 companies and growing enterprises.</p>
+                    <p class="feature-description">Sophisticated algorithms designed for Fortune 500 companies and growing enterprises.</p>
                 </div>
                 <div class="feature-card">
                     <div class="feature-icon">🚀</div>
@@ -561,6 +562,16 @@
                     <div class="feature-icon">🔒</div>
                     <h3 class="feature-title">Secure & Confidential</h3>
                     <p class="feature-description">Bank-level security with complete data privacy and confidentiality.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🌍</div>
+                    <h3 class="feature-title">Multi-Billion Dollar Operations</h3>
+                    <p class="feature-description">Comprehensive systems designed for multi-billion dollar operations and complex organizational structures.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🎯</div>
+                    <h3 class="feature-title">Executive-Level Partnership</h3>
+                    <p class="feature-description">Board-ready presentations and strategic consulting designed for Fortune 500 C-suite decision-makers.</p>
                 </div>
             </div>
         </div>
@@ -627,7 +638,7 @@
                         <textarea id="mainChallenges" class="form-textarea" rows="3" placeholder="Describe your main business challenge..."></textarea>
                     </div>
                 </div>
-                <button class="primary-button" onclick="analyzeBusinessModern()">Generate LaNier Analysis</button>
+                <button class="primary-button" onclick="analyzeBusinessModern()">Get Your AI Analysis</button>
             </div>
         </div>
     </section>
@@ -700,7 +711,8 @@
                     LaNier Business Intelligence Consulting™<br>
                     Transforming businesses through intelligent AI implementation
                 </p>
-            </div>
+            <div style="margin-top: 1rem; text-align: center;">
+    <button onclick="loadDemo()" style="background: transparent; color: #64748b; border: 1px solid #e2e8f0; padding: 0.5rem 1rem; border-radius: 8px; font-size: 0.8rem; cursor: pointer;">🎯 Demo</button>
         </div>
     </footer>
 
@@ -1095,7 +1107,7 @@ RISK MITIGATION
 
 WHY LANIER BUSINESS INTELLIGENCE?
 =================================
-✓ Specialized in AI transformation for growing businesses
+✓ Specializing in AI transformation for growing businesses
 ✓ Proven track record with 200-800% ROI results
 ✓ Comprehensive support from assessment to implementation
 ✓ Ongoing optimization and performance monitoring
@@ -1103,16 +1115,16 @@ WHY LANIER BUSINESS INTELLIGENCE?
 NEXT STEPS
 ==========
 1. Review this proposal with your leadership team
-2. Schedule detailed consultation to discuss implementation
-3. Customize solution package for your specific needs
-4. Begin with pilot program for immediate results
+2. Schedule a detailed consultation to discuss implementation
+3. Customize the solution package for your specific needs
+4. Begin with a pilot program for immediate results
 
 READY TO GET STARTED?
 =====================
 📅 Schedule your consultation: https://calendly.com/lanierbusinessintelligence
 📧 Questions? Email: LaNierBIC@outlook.com
 
-This proposal is valid for 30 days and includes complimentary consultation.
+This proposal is valid for 30 days and includes a complimentary consultation.
 
 ---
 LaNier Business Intelligence Consulting™
@@ -1180,10 +1192,10 @@ ${item.querySelector('div:last-child').textContent}
 
 NEXT STEPS
 ==========
-1. Schedule consultation to discuss findings
-2. Develop customized implementation plan
+1. Schedule a consultation to discuss findings
+2. Develop a customized implementation plan
 3. Begin pilot program with highest-ROI opportunities
-4. Scale successful solutions across organization
+4. Scale successful solutions across the organization
 
 Contact LaNier Business Intelligence Consulting for implementation support:
 📧 LaNierBIC@outlook.com
@@ -1217,17 +1229,8 @@ Thank you for choosing LaNier Business Intelligence Consulting.
             document.getElementById('mainChallenges').value = 'Need to improve operational efficiency and implement predictive maintenance systems';
         }
 
-        // Add demo button for testing
-        window.addEventListener('load', function() {
-            const demoBtn = document.createElement('button');
-            demoBtn.textContent = '🎯 Load Demo Data';
-            demoBtn.className = 'secondary-button';
-            demoBtn.style.margin = '1rem auto';
-            demoBtn.style.display = 'block';
-            demoBtn.onclick = loadDemo;
+        
             
-            const formContainer = document.querySelector('.form-container');
-            formContainer.appendChild(demoBtn);
         });
     </script>
 </body>
