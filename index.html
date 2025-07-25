@@ -5,6 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AI Business Diagnostic Dashboard - LaNier Business Intelligence Consulting</title>
     <meta name="description" content="Comprehensive AI-powered business analysis and consulting tool for Fortune 500 companies and manufacturing enterprises">
+    
+    <!-- Favicon and Icons -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="LaNier Business Intelligence - AI-Powered Business Analysis">
+    <meta property="og:description" content="Transform your business with advanced AI analysis and strategic insights. Get comprehensive diagnostics in minutes, not months.">
+    <meta property="og:image" content="https://yourdomain.com/og-image.png">
+    <meta property="og:url" content="https://yourdomain.com">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="LaNier Business Intelligence Consulting">
+    
+    <!-- Twitter Card Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="LaNier Business Intelligence - AI-Powered Business Analysis">
+    <meta name="twitter:description" content="Transform your business with advanced AI analysis and strategic insights. Professional diagnostics for Fortune 500 companies.">
+    <meta name="twitter:image" content="https://yourdomain.com/og-image.png">
+    
+    <!-- Theme and Mobile -->
+    <meta name="theme-color" content="#2c5f5f">
+    <meta name="msapplication-TileColor" content="#2c5f5f">
     <style>
         * {
             margin: 0;
@@ -13,54 +37,200 @@
         }
 
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            min-height: 100vh;
-            padding: 20px;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: #f8fafc;
+            color: #334155;
+            line-height: 1.6;
         }
 
-        .dashboard-container {
-            max-width: 1400px;
+        .navbar {
+            background: white;
+            border-bottom: 1px solid #e2e8f0;
+            padding: 1rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .nav-container {
+            max-width: 1200px;
             margin: 0 auto;
-            background: rgba(255, 255, 255, 0.95);
-            border-radius: 20px;
-            padding: 30px;
-            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
-            backdrop-filter: blur(10px);
+            padding: 0 1.5rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
         }
 
-        .header {
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+        }
+
+        .logo-icon {
+            width: 40px;
+            height: 40px;
+            background: #3b82f6;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: 600;
+            font-size: 18px;
+        }
+
+        .logo-text {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: #1e293b;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+        }
+
+        .nav-link {
+            color: #64748b;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.2s;
+        }
+
+        .nav-link:hover {
+            color: #3b82f6;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1.5rem;
+        }
+
+        .hero {
+            background: linear-gradient(135deg, #3b82f6 0%, #1d4ed8 100%);
+            color: white;
+            padding: 4rem 0;
             text-align: center;
-            margin-bottom: 40px;
-            position: relative;
         }
 
-        .header h1 {
-            font-size: 2.5em;
-            color: #2c3e50;
-            margin-bottom: 10px;
-            text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+        .hero h1 {
+            font-size: 3rem;
+            font-weight: 800;
+            margin-bottom: 1rem;
+            line-height: 1.1;
         }
 
-        .header p {
-            color: #7f8c8d;
-            font-size: 1.1em;
-            margin-bottom: 20px;
+        .hero p {
+            font-size: 1.25rem;
+            opacity: 0.9;
+            max-width: 600px;
+            margin: 0 auto 2rem;
         }
 
-        .business-form {
-            background: #f8f9fa;
-            padding: 25px;
-            border-radius: 15px;
-            margin-bottom: 30px;
-            border: 2px solid #e9ecef;
+        .cta-button {
+            background: white;
+            color: #3b82f6;
+            padding: 1rem 2rem;
+            border: none;
+            border-radius: 12px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.2s;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .cta-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 25px rgba(59, 130, 246, 0.3);
+        }
+
+        .features {
+            padding: 4rem 0;
+            background: white;
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .feature-card {
+            background: #f8fafc;
+            padding: 2rem;
+            border-radius: 16px;
+            border: 1px solid #e2e8f0;
+            transition: all 0.2s;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+            border-color: #3b82f6;
+        }
+
+        .feature-icon {
+            width: 48px;
+            height: 48px;
+            background: #3b82f6;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 20px;
+            margin-bottom: 1rem;
+        }
+
+        .feature-title {
+            font-size: 1.25rem;
+            font-weight: 600;
+            color: #1e293b;
+            margin-bottom: 0.5rem;
+        }
+
+        .feature-description {
+            color: #64748b;
+        }
+
+        .assessment-section {
+            padding: 4rem 0;
+            background: #f8fafc;
+        }
+
+        .section-title {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: #1e293b;
+            text-align: center;
+            margin-bottom: 1rem;
+        }
+
+        .section-subtitle {
+            font-size: 1.1rem;
+            color: #64748b;
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        .form-container {
+            background: white;
+            border-radius: 20px;
+            padding: 2.5rem;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            border: 1px solid #e2e8f0;
         }
 
         .form-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 20px;
-            margin-bottom: 20px;
+            gap: 1.5rem;
+            margin-bottom: 2rem;
         }
 
         .form-group {
@@ -68,244 +238,252 @@
             flex-direction: column;
         }
 
-        .form-group label {
-            font-weight: bold;
-            color: #2c3e50;
-            margin-bottom: 8px;
-            font-size: 0.9em;
+        .form-label {
+            font-weight: 600;
+            color: #374151;
+            margin-bottom: 0.5rem;
+            font-size: 0.9rem;
         }
 
-        .form-group input, .form-group select, .form-group textarea {
-            padding: 12px;
-            border: 2px solid #e9ecef;
-            border-radius: 8px;
-            font-size: 1em;
-            transition: border-color 0.3s ease;
+        .form-input, .form-select, .form-textarea {
+            padding: 0.875rem 1rem;
+            border: 2px solid #e5e7eb;
+            border-radius: 10px;
+            font-size: 1rem;
+            transition: all 0.2s;
+            background: white;
         }
 
-        .form-group input:focus, .form-group select:focus, .form-group textarea:focus {
+        .form-input:focus, .form-select:focus, .form-textarea:focus {
             outline: none;
-            border-color: #667eea;
+            border-color: #3b82f6;
+            box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
         }
 
-        .analyze-btn {
-            background: linear-gradient(45deg, #667eea, #764ba2);
+        .primary-button {
+            background: linear-gradient(135deg, #3b82f6, #1d4ed8);
             color: white;
-            padding: 15px 30px;
+            padding: 1rem 2.5rem;
             border: none;
-            border-radius: 25px;
-            font-size: 1.1em;
-            font-weight: bold;
+            border-radius: 12px;
+            font-size: 1.1rem;
+            font-weight: 600;
             cursor: pointer;
-            transition: all 0.3s ease;
+            transition: all 0.2s;
             display: block;
-            margin: 20px auto;
+            margin: 2rem auto;
             min-width: 200px;
         }
 
-        .analyze-btn:hover {
+        .primary-button:hover {
             transform: translateY(-2px);
-            box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+            box-shadow: 0 10px 25px rgba(59, 130, 246, 0.3);
         }
 
         .results-container {
             display: none;
-            margin-top: 30px;
+            margin-top: 3rem;
         }
 
         .metrics-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 20px;
-            margin-bottom: 30px;
+            gap: 1.5rem;
+            margin-bottom: 3rem;
         }
 
         .metric-card {
             background: white;
-            padding: 20px;
-            border-radius: 15px;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            padding: 2rem;
+            border-radius: 16px;
             text-align: center;
-            transition: transform 0.3s ease;
+            border: 1px solid #e2e8f0;
+            transition: all 0.2s;
         }
 
         .metric-card:hover {
-            transform: translateY(-5px);
+            transform: translateY(-2px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
         }
 
         .metric-value {
-            font-size: 2.5em;
-            font-weight: bold;
-            margin: 10px 0;
+            font-size: 2.5rem;
+            font-weight: 800;
+            margin: 1rem 0;
         }
 
         .metric-label {
-            color: #7f8c8d;
-            font-size: 0.9em;
+            color: #64748b;
+            font-size: 0.9rem;
             text-transform: uppercase;
-            letter-spacing: 1px;
+            letter-spacing: 0.5px;
+            font-weight: 600;
         }
 
-        .health-score {
-            color: #27ae60;
-        }
+        .health-score { color: #10b981; }
+        .efficiency-score { color: #f59e0b; }
+        .risk-level { color: #ef4444; }
+        .growth-potential { color: #3b82f6; }
 
-        .efficiency-score {
-            color: #f39c12;
-        }
-
-        .risk-level {
-            color: #e74c3c;
-        }
-
-        .growth-potential {
-            color: #3498db;
-        }
-
-        .problems-section, .solutions-section {
+        .analysis-section {
             background: white;
-            padding: 25px;
-            border-radius: 15px;
-            margin: 20px 0;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            border-radius: 16px;
+            padding: 2rem;
+            margin: 2rem 0;
+            border: 1px solid #e2e8f0;
         }
 
-        .section-title {
-            font-size: 1.5em;
-            color: #2c3e50;
-            margin-bottom: 20px;
-            padding-bottom: 10px;
-            border-bottom: 3px solid #667eea;
+        .analysis-title {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: #1e293b;
+            margin-bottom: 1.5rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 3px solid #3b82f6;
         }
 
-        .problem-item, .solution-item {
-            padding: 15px;
-            margin: 10px 0;
-            border-radius: 10px;
-            border-left: 4px solid #e74c3c;
+        .item-card {
+            padding: 1.5rem;
+            margin: 1rem 0;
+            border-radius: 12px;
+            border-left: 4px solid #3b82f6;
+            background: #f8fafc;
         }
 
-        .solution-item {
-            border-left-color: #27ae60;
-            background: #f8f9fa;
+        .item-title {
+            font-weight: 600;
+            color: #1e293b;
+            margin-bottom: 0.5rem;
         }
 
-        .problem-item {
-            background: #fdf2f2;
-        }
-
-        .priority-high {
-            border-left-color: #e74c3c;
-            background: #fdf2f2;
-        }
-
-        .priority-medium {
-            border-left-color: #f39c12;
-            background: #fef9e7;
-        }
-
-        .priority-low {
-            border-left-color: #27ae60;
-            background: #f0f9ff;
-        }
-
-        .problem-title, .solution-title {
-            font-weight: bold;
-            color: #2c3e50;
-            margin-bottom: 8px;
-        }
-
-        .problem-description, .solution-description {
-            color: #555;
+        .item-description {
+            color: #64748b;
             line-height: 1.6;
         }
 
-        .impact-badge {
+        .badge {
             display: inline-block;
-            padding: 4px 8px;
-            border-radius: 12px;
-            font-size: 0.8em;
-            font-weight: bold;
-            margin-top: 8px;
-        }
-
-        .impact-high {
-            background: #e74c3c;
-            color: white;
-        }
-
-        .impact-medium {
-            background: #f39c12;
-            color: white;
-        }
-
-        .impact-low {
-            background: #27ae60;
-            color: white;
-        }
-
-        .ai-recommendations {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
-            padding: 25px;
-            border-radius: 15px;
-            margin: 20px 0;
-        }
-
-        .recommendation-item {
-            background: rgba(255, 255, 255, 0.1);
-            padding: 15px;
-            margin: 10px 0;
-            border-radius: 10px;
-            backdrop-filter: blur(5px);
-        }
-
-        .recommendation-title {
-            font-weight: bold;
-            margin-bottom: 8px;
-        }
-
-        .roi-estimate {
-            background: #27ae60;
-            color: white;
-            padding: 5px 10px;
-            border-radius: 15px;
-            font-size: 0.9em;
-            display: inline-block;
-            margin-top: 10px;
-        }
-
-        .export-btn {
-            background: #2c3e50;
-            color: white;
-            padding: 12px 25px;
-            border: none;
+            padding: 0.25rem 0.75rem;
             border-radius: 20px;
-            font-size: 1em;
-            cursor: pointer;
-            margin: 10px;
-            transition: all 0.3s ease;
+            font-size: 0.8rem;
+            font-weight: 600;
+            margin-top: 0.5rem;
         }
 
-        .export-btn:hover {
-            background: #34495e;
+        .badge-high { background: #fef2f2; color: #dc2626; }
+        .badge-medium { background: #fef3c7; color: #d97706; }
+        .badge-low { background: #f0fdf4; color: #16a34a; }
+
+        .ai-section {
+            background: linear-gradient(135deg, #1e293b, #334155);
+            color: white;
+            border-radius: 16px;
+            padding: 2rem;
+            margin: 2rem 0;
+        }
+
+        .ai-section .analysis-title {
+            color: white;
+            border-bottom-color: rgba(255, 255, 255, 0.3);
+        }
+
+        .ai-card {
+            background: rgba(255, 255, 255, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(10px);
+            padding: 1.5rem;
+            margin: 1rem 0;
+            border-radius: 12px;
+        }
+
+        .roi-badge {
+            background: #10b981;
+            color: white;
+            padding: 0.25rem 0.75rem;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: 600;
+            display: inline-block;
+            margin-top: 0.5rem;
+        }
+
+        .action-buttons {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            margin: 3rem 0;
+            flex-wrap: wrap;
+        }
+
+        .secondary-button {
+            background: white;
+            color: #3b82f6;
+            border: 2px solid #3b82f6;
+            padding: 0.875rem 1.5rem;
+            border-radius: 10px;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.2s;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .secondary-button:hover {
+            background: #3b82f6;
+            color: white;
             transform: translateY(-2px);
+        }
+
+        .footer {
+            background: #2c5f5f;
+            color: white;
+            padding: 3rem 0;
+            text-align: center;
+        }
+
+        .footer-content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .footer h3 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .contact-info {
+            display: flex;
+            gap: 2rem;
+            justify-content: center;
+            margin: 1.5rem 0;
+            flex-wrap: wrap;
+        }
+
+        .contact-item {
+            color: #94a3b8;
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+
+        .contact-item:hover {
+            color: white;
         }
 
         .loading {
             text-align: center;
-            padding: 40px;
-            color: #667eea;
+            padding: 3rem;
+            color: #3b82f6;
         }
 
         .loading-spinner {
-            border: 4px solid #f3f3f3;
-            border-top: 4px solid #667eea;
-            border-radius: 50%;
             width: 40px;
             height: 40px;
+            border: 4px solid #e5e7eb;
+            border-top: 4px solid #3b82f6;
+            border-radius: 50%;
             animation: spin 1s linear infinite;
-            margin: 0 auto 20px;
+            margin: 0 auto 1rem;
         }
 
         @keyframes spin {
@@ -313,200 +491,152 @@
             100% { transform: rotate(360deg); }
         }
 
-        .consultant-branding {
-            text-align: center;
-            margin-top: 40px;
-            padding: 20px;
-            background: linear-gradient(135deg, #2c3e50, #34495e);
-            color: white;
-            border-radius: 15px;
-        }
-
-        .premium-features {
-            background: linear-gradient(135deg, #f8f9fa, #e9ecef);
-            padding: 20px;
-            border-radius: 15px;
-            margin: 20px 0;
-            border: 2px solid #dee2e6;
-        }
-
-        .feature-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 15px;
-            margin-top: 15px;
-        }
-
-        .feature-card {
-            background: white;
-            padding: 15px;
-            border-radius: 10px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-        }
-
-        .feature-icon {
-            font-size: 1.5em;
-            margin-bottom: 8px;
-            display: block;
-        }
-
         @media (max-width: 768px) {
-            .dashboard-container {
-                padding: 20px;
+            .hero h1 {
+                font-size: 2rem;
             }
             
-            .header h1 {
-                font-size: 2em;
+            .section-title {
+                font-size: 2rem;
+            }
+            
+            .nav-links {
+                display: none;
             }
             
             .form-grid {
                 grid-template-columns: 1fr;
             }
             
-            .metrics-grid {
-                grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            .action-buttons {
+                flex-direction: column;
+                align-items: center;
             }
         }
     </style>
 </head>
 <body>
-    <div class="dashboard-container">
-        <div class="header">
-            <div style="display: flex; align-items: center; justify-content: center; margin-bottom: 20px;">
-                <div style="width: 80px; height: 80px; background: #2c5f5f; border-radius: 15px; display: flex; align-items: center; justify-content: center; margin-right: 20px;">
-                    <div style="color: white; font-weight: bold; font-size: 24px;">📊</div>
-                </div>
-                <div style="text-align: left;">
-                    <h2 style="color: #2c5f5f; margin: 0; font-size: 2.5em; font-weight: 300;">LaNier</h2>
-                    <p style="color: #555; margin: 0; font-size: 0.9em; letter-spacing: 1px; text-transform: uppercase;">BUSINESS INTELLIGENCE</p>
-                    <p style="color: #555; margin: 0; font-size: 0.9em; letter-spacing: 1px; text-transform: uppercase;">CONSULTING™</p>
-                </div>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <div class="logo-icon">LN</div>
+                <div class="logo-text">LaNier</div>
             </div>
-            <h1>🤖 Professional Business Intelligence Dashboard</h1>
-            <p>Advanced AI-Powered Analysis for Growing Enterprises</p>
-        </div>
-
-        <div class="premium-features">
-            <h2 style="color: #2c3e50; margin-bottom: 15px; text-align: center;">🎯 Professional-Grade Business Analysis</h2>
-            <div class="feature-grid">
-                <div class="feature-card">
-                    <span class="feature-icon">📊</span>
-                    <strong>Multi-Million Dollar Analysis</strong>
-                    <p>Sophisticated analysis for established enterprises</p>
-                </div>
-                <div class="feature-card">
-                    <span class="feature-icon">🧠</span>
-                    <strong>Strategic AI Intelligence</strong>
-                    <p>Advanced business intelligence and competitive analysis</p>
-                </div>
-                <div class="feature-card">
-                    <span class="feature-icon">💰</span>
-                    <strong>High-ROI Solutions</strong>
-                    <p>200-500% ROI with proven implementation strategies</p>
-                </div>
-                <div class="feature-card">
-                    <span class="feature-icon">🚀</span>
-                    <strong>Executive-Ready Results</strong>
-                    <p>Professional reports ready for board presentations</p>
-                </div>
+            <div class="nav-links">
+                <a href="#assessment" class="nav-link">Assessment</a>
+                <a href="#features" class="nav-link">Features</a>
+                <a href="#contact" class="nav-link">Contact</a>
             </div>
         </div>
+    </nav>
 
-        <div class="business-form">
-            <h2 style="color: #2c3e50; margin-bottom: 20px;">📊 Professional Business Assessment</h2>
-            <div class="form-grid">
-                <div class="form-group">
-                    <label for="companyName">Company Name</label>
-                    <input type="text" id="companyName" placeholder="Enter company name">
+    <section class="hero">
+        <div class="container">
+            <h1>LaNier Business Intelligence</h1>
+            <p>Transform your business with advanced LaNier analysis and strategic insights. Get comprehensive diagnostics in minutes, not months.</p>
+            <a href="#assessment" class="cta-button">Start Your Free Analysis</a>
+        </div>
+    </section>
+
+    <section class="features" id="features">
+        <div class="container">
+            <h2 class="section-title">Why Choose LaNier?</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">📊</div>
+                    <h3 class="feature-title">Enterprise-Grade Analysis</h3>
+                    <p class="feature-description">Sophisticated LaNier algorithms designed for Fortune 500 companies and growing enterprises.</p>
                 </div>
-                <div class="form-group">
-                    <label for="industry">Industry</label>
-                    <select id="industry">
-                        <option value="">Select industry</option>
-                        <option value="manufacturing">Manufacturing</option>
-                        <option value="retail">Retail</option>
-                        <option value="healthcare">Healthcare</option>
-                        <option value="finance">Finance</option>
-                        <option value="technology">Technology</option>
-                        <option value="food-service">Food Service</option>
-                        <option value="professional-services">Professional Services</option>
-                        <option value="real-estate">Real Estate</option>
-                        <option value="education">Education</option>
-                        <option value="other">Other</option>
-                    </select>
+                <div class="feature-card">
+                    <div class="feature-icon">🚀</div>
+                    <h3 class="feature-title">Rapid Implementation</h3>
+                    <p class="feature-description">Get actionable insights and solutions implemented in weeks, not years.</p>
                 </div>
-                <div class="form-group">
-                    <label for="employeeCount">Number of Employees</label>
-                    <select id="employeeCount">
-                        <option value="">Select range</option>
-                        <option value="1-10">1-10</option>
-                        <option value="11-50">11-50</option>
-                        <option value="51-200">51-200</option>
-                        <option value="201-500">201-500</option>
-                        <option value="500-2000">500-2,000</option>
-                        <option value="2000+">2,000+ (Fortune 500)</option>
-                    </select>
+                <div class="feature-card">
+                    <div class="feature-icon">💰</div>
+                    <h3 class="feature-title">Proven ROI</h3>
+                    <p class="feature-description">Our clients see 200-800% ROI within the first year of implementation.</p>
                 </div>
-                <div class="form-group">
-                    <label for="annualRevenue">Annual Revenue</label>
-                    <select id="annualRevenue">
-                        <option value="">Select range</option>
-                        <option value="under-100k">Under $100K</option>
-                        <option value="100k-500k">$100K - $500K</option>
-                        <option value="500k-1m">$500K - $1M</option>
-                        <option value="1m-5m">$1M - $5M</option>
-                        <option value="5m-50m">$5M - $50M</option>
-                        <option value="50m-500m">$50M - $500M</option>
-                        <option value="500m+">$500M+ (Fortune 1000)</option>
-                    </select>
-                </div>
-                <div class="form-group">
-                    <label for="currentTech">Current Technology Level</label>
-                    <select id="currentTech">
-                        <option value="">Select level</option>
-                        <option value="basic">Basic (Email, Office)</option>
-                        <option value="intermediate">Intermediate (CRM, Basic Analytics)</option>
-                        <option value="advanced">Advanced (ERP, Business Intelligence)</option>
-                        <option value="cutting-edge">Cutting Edge (AI, Machine Learning)</option>
-                    </select>
-                </div>
-                <div class="form-group">
-                    <label for="mainChallenges">Main Business Challenges</label>
-                    <textarea id="mainChallenges" rows="3" placeholder="Describe the main challenges your business is facing..."></textarea>
-                </div>
-                <div class="form-group">
-                    <label for="customerAcquisition">Customer Acquisition Method</label>
-                    <select id="customerAcquisition">
-                        <option value="">Select primary method</option>
-                        <option value="word-of-mouth">Word of Mouth</option>
-                        <option value="social-media">Social Media</option>
-                        <option value="paid-advertising">Paid Advertising</option>
-                        <option value="seo">SEO/Content Marketing</option>
-                        <option value="referrals">Referrals</option>
-                        <option value="cold-outreach">Cold Outreach</option>
-                        <option value="events">Events/Networking</option>
-                        <option value="enterprise-sales">Enterprise Sales Team</option>
-                    </select>
-                </div>
-                <div class="form-group">
-                    <label for="dataCollection">Data Collection & Analysis</label>
-                    <select id="dataCollection">
-                        <option value="">Select current state</option>
-                        <option value="none">No systematic data collection</option>
-                        <option value="basic">Basic spreadsheet tracking</option>
-                        <option value="tools">Using business tools (CRM, Analytics)</option>
-                        <option value="advanced">Advanced analytics & reporting</option>
-                        <option value="enterprise">Enterprise data warehouse</option>
-                    </select>
+                <div class="feature-card">
+                    <div class="feature-icon">🔒</div>
+                    <h3 class="feature-title">Secure & Confidential</h3>
+                    <p class="feature-description">Bank-level security with complete data privacy and confidentiality.</p>
                 </div>
             </div>
-            <button class="analyze-btn" onclick="analyzeBusinessPremium()">🔍 Execute Premium AI Analysis</button>
         </div>
+    </section>
 
-        <div class="results-container" id="resultsContainer">
+    <section class="assessment-section" id="assessment">
+        <div class="container">
+            <h2 class="section-title">Business Intelligence Assessment</h2>
+            <p class="section-subtitle">Answer a few questions to receive your comprehensive AI-powered business analysis</p>
+            
+            <div class="form-container">
+                <div class="form-grid">
+                    <div class="form-group">
+                        <label class="form-label" for="companyName">Company Name</label>
+                        <input type="text" id="companyName" class="form-input" placeholder="Enter your company name">
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label" for="industry">Industry</label>
+                        <select id="industry" class="form-select">
+                            <option value="">Select your industry</option>
+                            <option value="manufacturing">Manufacturing</option>
+                            <option value="retail">Retail</option>
+                            <option value="healthcare">Healthcare</option>
+                            <option value="finance">Finance</option>
+                            <option value="technology">Technology</option>
+                            <option value="professional-services">Professional Services</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label" for="employeeCount">Company Size</label>
+                        <select id="employeeCount" class="form-select">
+                            <option value="">Select employee count</option>
+                            <option value="1-10">1-10 employees</option>
+                            <option value="11-50">11-50 employees</option>
+                            <option value="51-200">51-200 employees</option>
+                            <option value="201-500">201-500 employees</option>
+                            <option value="500+">500+ employees</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label" for="annualRevenue">Annual Revenue</label>
+                        <select id="annualRevenue" class="form-select">
+                            <option value="">Select revenue range</option>
+                            <option value="under-1m">Under $1M</option>
+                            <option value="1m-5m">$1M - $5M</option>
+                            <option value="5m-50m">$5M - $50M</option>
+                            <option value="50m-500m">$50M - $500M</option>
+                            <option value="500m+">$500M+</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label" for="currentTech">Technology Maturity</label>
+                        <select id="currentTech" class="form-select">
+                            <option value="">Select current level</option>
+                            <option value="basic">Basic (Email, Office)</option>
+                            <option value="intermediate">Intermediate (CRM, Analytics)</option>
+                            <option value="advanced">Advanced (ERP, BI)</option>
+                            <option value="cutting-edge">Cutting Edge (AI, ML)</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label" for="mainChallenges">Primary Business Challenge</label>
+                        <textarea id="mainChallenges" class="form-textarea" rows="3" placeholder="Describe your main business challenge..."></textarea>
+                    </div>
+                </div>
+                <button class="primary-button" onclick="analyzeBusinessModern()">Generate LaNier Analysis</button>
+            </div>
+        </div>
+    </section>
+
+    <div class="results-container" id="resultsContainer">
+        <div class="container">
             <div class="loading" id="loadingDiv">
                 <div class="loading-spinner"></div>
-                <p>Advanced AI algorithms analyzing your enterprise data...</p>
+                <p>LaNier algorithms analyzing your business data...</p>
             </div>
 
             <div id="analysisResults" style="display: none;">
@@ -514,163 +644,108 @@
                     <div class="metric-card">
                         <div class="metric-label">Business Health Score</div>
                         <div class="metric-value health-score" id="healthScore">--</div>
-                        <p>Enterprise performance analysis</p>
+                        <p>Overall business performance</p>
                     </div>
                     <div class="metric-card">
-                        <div class="metric-label">AI Transformation Potential</div>
+                        <div class="metric-label">LaNier Readiness</div>
                         <div class="metric-value efficiency-score" id="aiReadiness">--</div>
-                        <p>AI implementation opportunity</p>
+                        <p>Technology transformation potential</p>
                     </div>
                     <div class="metric-card">
-                        <div class="metric-label">Competitive Risk Level</div>
+                        <div class="metric-label">Risk Assessment</div>
                         <div class="metric-value risk-level" id="riskLevel">--</div>
-                        <p>Market position assessment</p>
+                        <p>Competitive and operational risks</p>
                     </div>
                     <div class="metric-card">
-                        <div class="metric-label">Revenue Growth Potential</div>
+                        <div class="metric-label">Growth Potential</div>
                         <div class="metric-value growth-potential" id="growthPotential">--</div>
-                        <p>Projected growth opportunity</p>
+                        <p>Revenue expansion opportunity</p>
                     </div>
                 </div>
 
-                <div class="problems-section">
-                    <h2 class="section-title">🚨 Strategic Challenges Identified</h2>
+                <div class="analysis-section">
+                    <h2 class="analysis-title">🎯 Strategic Challenges</h2>
                     <div id="problemsList"></div>
                 </div>
 
-                <div class="ai-recommendations">
-                    <h2 class="section-title" style="color: white; border-bottom-color: white;">🤖 AI-Powered Transformation Solutions</h2>
+                <div class="analysis-section">
+                    <h2 class="analysis-title">🤖 LaNier-Powered Solutions</h2>
                     <div id="aiRecommendations"></div>
                 </div>
 
-                <div class="solutions-section">
-                    <h2 class="section-title">💡 Strategic Implementation Roadmap</h2>
+                <div class="analysis-section">
+                    <h2 class="analysis-title">📈 Implementation Roadmap</h2>
                     <div id="solutionsList"></div>
                 </div>
 
-                <div style="text-align: center; margin: 30px 0;">
-                    <button class="export-btn" onclick="exportReport()">📄 Export Executive Report</button>
-                    <button class="export-btn" onclick="generateProposal()">💼 Generate Strategic Proposal</button>
-                    <button class="export-btn" onclick="scheduleConsultation()">📞 Schedule Executive Consultation</button>
+                <div class="action-buttons">
+                    <button class="primary-button" onclick="exportReport()">Download Report</button>
+                    <a href="https://calendly.com/lanierbusinessintelligence" class="secondary-button">Schedule Consultation</a>
+                    <button class="secondary-button" onclick="generateProposal()">Get Proposal</button>
                 </div>
             </div>
-        </div>
-
-        <div class="consultant-branding">
-            <div style="display: flex; align-items: center; justify-content: center; margin-bottom: 15px;">
-                <div style="width: 60px; height: 60px; background: rgba(255,255,255,0.2); border-radius: 12px; display: flex; align-items: center; justify-content: center; margin-right: 15px;">
-                    <div style="color: white; font-weight: bold; font-size: 18px;">📊</div>
-                </div>
-                <div style="text-align: left;">
-                    <h3 style="margin: 0; font-size: 1.8em; font-weight: 300;">LaNier</h3>
-                    <p style="margin: 0; font-size: 0.8em; letter-spacing: 1px; opacity: 0.9;">BUSINESS INTELLIGENCE CONSULTING™</p>
-                </div>
-            </div>
-            <p><strong>Professional Business Intelligence & Strategic Growth Consulting</strong></p>
-            <p>Advanced Solutions • Strategic Analysis • Growth Acceleration</p>
-            <p style="margin-top: 15px;"><strong>Ready to accelerate your business growth with professional AI analysis?</strong></p>
-            <p>Contact: LaNierBIC@outlook.com | (973) 558-9043</p>
-            <p><strong>Ready to begin your AI transformation?</strong></p>
-            <p><a href="https://calendly.com/lanierbusinessintelligence/complimentary-business-diagnostic-session" target="_blank" style="color: #fff; text-decoration: underline;">📅 Schedule Executive Consultation</a></p>
-            <div style="margin-top: 20px; padding-top: 15px; border-top: 1px solid rgba(255,255,255,0.3); font-size: 0.9em;">
-                <a href="#" onclick="showPrivacyPolicy()" style="color: #fff; text-decoration: underline; margin-right: 20px;">🔒 Privacy Policy</a>
-                <a href="#" onclick="showDataSecurity()" style="color: #fff; text-decoration: underline;">🛡️ Data Security</a>
-            </div>
-            <p><em>"Transforming established businesses into market leaders through intelligent strategic analysis"</em></p></p>
         </div>
     </div>
 
+    <footer class="footer" id="contact">
+        <div class="container">
+            <div class="footer-content">
+                <h3>Ready to Transform Your Business?</h3>
+                <p>Get started with a complimentary business intelligence consultation</p>
+                <div class="contact-info">
+                    <a href="mailto:LaNierBIC@outlook.com" class="contact-item">📧 LaNierBIC@outlook.com</a>
+                    <a href="https://calendly.com/lanierbusinessintelligence" class="contact-item">📅 Schedule Consultation</a>
+                </div>
+                <p style="margin-top: 2rem; color: #94a3b8; font-size: 0.9rem;">
+                    LaNier Business Intelligence Consulting™<br>
+                    Transforming businesses through intelligent AI implementation
+                </p>
+            </div>
+        </div>
+    </footer>
+
     <script>
-        // Enhanced business analysis for Fortune 500 companies
-        const enterpriseAnalytics = {
+        // Modern business analysis system
+        const modernAnalytics = {
             industryBenchmarks: {
-                manufacturing: { healthBase: 80, aiReadiness: 70, commonIssues: ['efficiency', 'predictive-maintenance', 'supply-chain', 'quality-control'] },
-                retail: { healthBase: 75, aiReadiness: 65, commonIssues: ['inventory', 'customer-experience', 'demand-forecasting', 'personalization'] },
-                healthcare: { healthBase: 85, aiReadiness: 55, commonIssues: ['patient-outcomes', 'operational-efficiency', 'compliance', 'data-integration'] },
-                finance: { healthBase: 88, aiReadiness: 85, commonIssues: ['risk-management', 'fraud-detection', 'customer-analytics', 'regulatory-compliance'] },
-                technology: { healthBase: 82, aiReadiness: 95, commonIssues: ['innovation-speed', 'market-competition', 'talent-retention', 'scalability'] },
-                'food-service': { healthBase: 70, aiReadiness: 45, commonIssues: ['operations', 'food-safety', 'inventory', 'customer-satisfaction'] },
-                'professional-services': { healthBase: 78, aiReadiness: 70, commonIssues: ['billable-efficiency', 'client-management', 'knowledge-management', 'scaling'] },
-                'real-estate': { healthBase: 72, aiReadiness: 50, commonIssues: ['market-analysis', 'lead-generation', 'property-valuation', 'client-management'] },
-                education: { healthBase: 75, aiReadiness: 60, commonIssues: ['student-outcomes', 'operational-efficiency', 'personalization', 'cost-management'] },
-                other: { healthBase: 75, aiReadiness: 65, commonIssues: ['efficiency', 'customer-service', 'data-analytics', 'competitive-advantage'] }
+                manufacturing: { healthBase: 75, aiReadiness: 60, commonIssues: ['efficiency', 'predictive-maintenance', 'supply-chain'] },
+                retail: { healthBase: 70, aiReadiness: 55, commonIssues: ['inventory', 'customer-experience', 'personalization'] },
+                healthcare: { healthBase: 80, aiReadiness: 45, commonIssues: ['patient-outcomes', 'efficiency', 'compliance'] },
+                finance: { healthBase: 85, aiReadiness: 75, commonIssues: ['risk-management', 'fraud-detection', 'analytics'] },
+                technology: { healthBase: 80, aiReadiness: 85, commonIssues: ['scalability', 'innovation', 'competition'] },
+                'professional-services': { healthBase: 75, aiReadiness: 65, commonIssues: ['efficiency', 'client-management', 'scaling'] },
+                other: { healthBase: 70, aiReadiness: 60, commonIssues: ['efficiency', 'customer-service', 'analytics'] }
             },
 
             problemDatabase: {
                 'efficiency': {
                     title: 'Operational Efficiency Gaps',
-                    description: 'Manual processes and workflow inefficiencies limiting enterprise productivity and profitability',
+                    description: 'Manual processes and workflow bottlenecks limiting productivity and profitability',
                     impact: 'high',
-                    priority: 'high',
-                    aiSolution: 'Deploy AI-powered process automation and intelligent workflow optimization systems'
+                    priority: 'high'
                 },
                 'predictive-maintenance': {
                     title: 'Reactive Maintenance Strategy',
-                    description: 'Equipment failures and unplanned downtime causing significant operational disruptions',
+                    description: 'Equipment failures causing unplanned downtime and increased costs',
                     impact: 'high',
-                    priority: 'high',
-                    aiSolution: 'Implement AI predictive maintenance with IoT sensors and machine learning algorithms'
-                },
-                'supply-chain': {
-                    title: 'Supply Chain Optimization',
-                    description: 'Inefficient supply chain management affecting costs, delivery times, and customer satisfaction',
-                    impact: 'high',
-                    priority: 'medium',
-                    aiSolution: 'Deploy AI-driven supply chain optimization and demand forecasting systems'
+                    priority: 'medium'
                 },
                 'customer-experience': {
-                    title: 'Customer Experience Deficiencies',
-                    description: 'Inconsistent customer experiences affecting retention and lifetime value',
-                    impact: 'high',
-                    priority: 'medium',
-                    aiSolution: 'Implement AI-powered customer experience optimization and personalization engines'
-                },
-                'data-analytics': {
-                    title: 'Data Intelligence Gaps',
-                    description: 'Insufficient data analytics capabilities limiting strategic decision-making effectiveness',
+                    title: 'Customer Experience Optimization',
+                    description: 'Inconsistent customer journeys affecting retention and growth',
                     impact: 'medium',
-                    priority: 'high',
-                    aiSolution: 'Deploy enterprise AI analytics platform with real-time business intelligence'
+                    priority: 'high'
                 },
-                'competitive-advantage': {
-                    title: 'Competitive Positioning Challenges',
-                    description: 'Lack of differentiation and competitive intelligence affecting market position',
+                'analytics': {
+                    title: 'Data Analytics Capabilities',
+                    description: 'Limited insights from business data hindering strategic decisions',
                     impact: 'high',
-                    priority: 'medium',
-                    aiSolution: 'Implement AI competitive intelligence and market analysis systems'
-                }
-            },
-
-            enterpriseSolutions: {
-                'predictive-analytics': {
-                    title: 'Enterprise Predictive Analytics Platform',
-                    description: 'Advanced machine learning for forecasting, optimization, and strategic planning',
-                    roi: '400-800% ROI',
-                    implementation: '8-16 weeks'
-                },
-                'intelligent-automation': {
-                    title: 'Intelligent Process Automation Suite',
-                    description: 'End-to-end automation of complex business processes with AI decision-making',
-                    roi: '500-1000% ROI',
-                    implementation: '12-24 weeks'
-                },
-                'customer-intelligence': {
-                    title: 'AI Customer Intelligence Platform',
-                    description: 'Comprehensive customer analytics, personalization, and experience optimization',
-                    roi: '300-600% ROI',
-                    implementation: '6-12 weeks'
-                },
-                'operational-optimization': {
-                    title: 'AI Operations Command Center',
-                    description: 'Real-time operational intelligence with predictive optimization capabilities',
-                    roi: '600-1200% ROI',
-                    implementation: '10-20 weeks'
+                    priority: 'medium'
                 }
             }
         };
 
-        function analyzeBusinessPremium() {
-            const form = document.querySelector('.business-form');
+        function analyzeBusinessModern() {
             const resultsContainer = document.getElementById('resultsContainer');
             const loadingDiv = document.getElementById('loadingDiv');
             const analysisResults = document.getElementById('analysisResults');
@@ -680,6 +755,9 @@
             loadingDiv.style.display = 'block';
             analysisResults.style.display = 'none';
 
+            // Scroll to results
+            resultsContainer.scrollIntoView({ behavior: 'smooth' });
+
             // Get form data
             const businessData = {
                 companyName: document.getElementById('companyName').value,
@@ -687,63 +765,50 @@
                 employeeCount: document.getElementById('employeeCount').value,
                 annualRevenue: document.getElementById('annualRevenue').value,
                 currentTech: document.getElementById('currentTech').value,
-                mainChallenges: document.getElementById('mainChallenges').value,
-                customerAcquisition: document.getElementById('customerAcquisition').value,
-                dataCollection: document.getElementById('dataCollection').value
+                mainChallenges: document.getElementById('mainChallenges').value
             };
 
             // Simulate AI analysis
             setTimeout(() => {
-                const analysis = performEnterpriseAnalysis(businessData);
-                displayEnterpriseResults(analysis);
+                const analysis = performModernAnalysis(businessData);
+                displayModernResults(analysis);
                 
                 loadingDiv.style.display = 'none';
                 analysisResults.style.display = 'block';
-            }, 4000);
+            }, 3000);
         }
 
-        function performEnterpriseAnalysis(data) {
+        function performModernAnalysis(data) {
             const industry = data.industry || 'other';
-            const benchmark = enterpriseAnalytics.industryBenchmarks[industry];
+            const benchmark = modernAnalytics.industryBenchmarks[industry];
             
-            // Calculate metrics based on inputs
             let healthScore = benchmark.healthBase;
             let aiReadiness = benchmark.aiReadiness;
             let riskLevel = 'Medium';
-            let growthPotential = '25%';
+            let growthPotential = '35%';
 
-            // Enterprise-level adjustments
-            if (data.annualRevenue === '5b+' || data.employeeCount === '2000+') {
-                healthScore += 15;
-                aiReadiness += 10;
-                growthPotential = '50%';
+            // Adjust based on company size and revenue
+            if (data.annualRevenue === '500m+' || data.employeeCount === '500+') {
+                healthScore += 10;
+                aiReadiness += 15;
                 riskLevel = 'Low';
+                growthPotential = '45%';
             }
 
-            // Adjust scores based on technology level
+            // Technology level adjustments
             if (data.currentTech === 'basic') {
                 healthScore -= 15;
-                aiReadiness -= 30;
+                aiReadiness -= 25;
                 riskLevel = 'High';
             } else if (data.currentTech === 'cutting-edge') {
-                healthScore += 10;
+                healthScore += 15;
                 aiReadiness += 20;
-                riskLevel = 'Low';
-                growthPotential = '75%';
+                growthPotential = '60%';
             }
 
-            if (data.dataCollection === 'none') {
-                healthScore -= 20;
-                aiReadiness -= 35;
-            } else if (data.dataCollection === 'enterprise') {
-                healthScore += 20;
-                aiReadiness += 25;
-            }
-
-            // Generate problems and solutions
-            const problems = generateEnterpriseProblems(data, benchmark);
-            const aiRecommendations = generateEnterpriseRecommendations(problems);
-            const solutions = generateEnterpriseSolutions(problems);
+            const problems = generateModernProblems(data, benchmark);
+            const recommendations = generateModernRecommendations(problems);
+            const solutions = generateModernSolutions();
 
             return {
                 healthScore: Math.max(0, Math.min(100, healthScore)),
@@ -751,114 +816,67 @@
                 riskLevel,
                 growthPotential,
                 problems,
-                aiRecommendations,
+                recommendations,
                 solutions
             };
         }
 
-        function generateEnterpriseProblems(data, benchmark) {
+        function generateModernProblems(data, benchmark) {
             const problems = [];
             
-            // Add industry-specific problems
             benchmark.commonIssues.forEach(issue => {
-                if (enterpriseAnalytics.problemDatabase[issue]) {
-                    problems.push(enterpriseAnalytics.problemDatabase[issue]);
+                if (modernAnalytics.problemDatabase[issue]) {
+                    problems.push(modernAnalytics.problemDatabase[issue]);
                 }
             });
 
-            // Add Fortune 500 specific challenges
-            if (data.annualRevenue === '5b+' || data.employeeCount === '2000+') {
-                problems.push({
-                    title: 'Enterprise Scale Optimization',
-                    description: 'Complex enterprise operations requiring AI-driven coordination and optimization across multiple business units',
-                    impact: 'high',
-                    priority: 'high',
-                    aiSolution: 'Deploy enterprise AI orchestration platform with cross-functional optimization'
-                });
-            }
-
-            if (data.currentTech === 'basic' && (data.annualRevenue === '500m-5b' || data.annualRevenue === '5b+')) {
-                problems.push({
-                    title: 'Digital Transformation Imperative',
-                    description: 'Large enterprise with outdated technology stack facing competitive disruption risks',
-                    impact: 'high',
-                    priority: 'critical',
-                    aiSolution: 'Execute comprehensive AI-first digital transformation strategy'
-                });
-            }
-
-            return problems.slice(0, 6);
+            return problems.slice(0, 4);
         }
 
-        function generateEnterpriseRecommendations(problems) {
-            const recommendations = [];
-            
-            problems.forEach(problem => {
-                recommendations.push({
-                    title: problem.aiSolution,
-                    description: `Strategic ${problem.title.toLowerCase()} transformation using cutting-edge AI technology`,
-                    roi: '400-1200% ROI',
-                    timeline: '8-24 weeks'
-                });
-            });
-
-            // Add enterprise-specific recommendations
-            recommendations.push({
-                title: 'AI Centers of Excellence Implementation',
-                description: 'Establish dedicated AI innovation hubs for continuous competitive advantage development',
-                roi: '500-800% ROI',
-                timeline: '12-20 weeks'
-            });
-
-            recommendations.push({
-                title: 'Executive AI Strategy Dashboard',
-                description: 'C-suite real-time intelligence platform for strategic decision-making and performance optimization',
-                roi: '300-600% ROI',
-                timeline: '6-12 weeks'
-            });
-
-            return recommendations;
+        function generateModernRecommendations(problems) {
+            return [
+                {
+                    title: 'AI Process Automation',
+                    description: 'Implement intelligent automation for key business processes',
+                    roi: '300-500% ROI'
+                },
+                {
+                    title: 'Predictive Analytics Platform',
+                    description: 'Deploy advanced analytics for forecasting and optimization',
+                    roi: '400-700% ROI'
+                },
+                {
+                    title: 'Customer Intelligence System',
+                    description: 'AI-powered customer insights and personalization',
+                    roi: '250-400% ROI'
+                }
+            ];
         }
 
-        function generateEnterpriseSolutions(problems) {
-            const solutions = [];
-            
-            solutions.push({
-                phase: 1,
-                title: 'Phase 1: AI Foundation & Quick Wins (Weeks 1-8)',
-                description: 'Establish AI infrastructure, deploy high-ROI solutions, and demonstrate immediate value to stakeholders',
-                timeline: '8 weeks',
-                priority: 'critical'
-            });
-
-            solutions.push({
-                phase: 2,
-                title: 'Phase 2: Core AI Implementation (Weeks 9-16)',
-                description: 'Deploy enterprise AI platforms, integrate with existing systems, and optimize core business processes',
-                timeline: '8 weeks',
-                priority: 'high'
-            });
-
-            solutions.push({
-                phase: 3,
-                title: 'Phase 3: Advanced Analytics & Optimization (Weeks 17-24)',
-                description: 'Implement predictive analytics, advanced automation, and competitive intelligence systems',
-                timeline: '8 weeks',
-                priority: 'medium'
-            });
-
-            solutions.push({
-                phase: 4,
-                title: 'Phase 4: AI Innovation & Scaling (Weeks 25-52)',
-                description: 'Establish AI innovation labs, scale successful implementations, and develop proprietary AI capabilities',
-                timeline: '28 weeks',
-                priority: 'medium'
-            });
-
-            return solutions;
+        function generateModernSolutions() {
+            return [
+                {
+                    phase: 1,
+                    title: 'Assessment & Quick Wins',
+                    description: 'Comprehensive analysis and immediate optimization opportunities',
+                    timeline: '2-4 weeks'
+                },
+                {
+                    phase: 2,
+                    title: 'Core AI Implementation',
+                    description: 'Deploy primary AI solutions with highest ROI potential',
+                    timeline: '6-12 weeks'
+                },
+                {
+                    phase: 3,
+                    title: 'Advanced Optimization',
+                    description: 'Full integration and advanced AI capabilities',
+                    timeline: '12-24 weeks'
+                }
+            ];
         }
 
-        function displayEnterpriseResults(analysis) {
+        function displayModernResults(analysis) {
             // Display metrics
             document.getElementById('healthScore').textContent = analysis.healthScore + '/100';
             document.getElementById('aiReadiness').textContent = analysis.aiReadiness + '/100';
@@ -870,11 +888,11 @@
             problemsList.innerHTML = '';
             analysis.problems.forEach(problem => {
                 const problemDiv = document.createElement('div');
-                problemDiv.className = `problem-item priority-${problem.priority}`;
+                problemDiv.className = 'item-card';
                 problemDiv.innerHTML = `
-                    <div class="problem-title">${problem.title}</div>
-                    <div class="problem-description">${problem.description}</div>
-                    <span class="impact-badge impact-${problem.impact}">${problem.impact.toUpperCase()} IMPACT</span>
+                    <div class="item-title">${problem.title}</div>
+                    <div class="item-description">${problem.description}</div>
+                    <span class="badge badge-${problem.impact}">${problem.impact.toUpperCase()} IMPACT</span>
                 `;
                 problemsList.appendChild(problemDiv);
             });
@@ -882,13 +900,13 @@
             // Display AI recommendations
             const aiRecommendations = document.getElementById('aiRecommendations');
             aiRecommendations.innerHTML = '';
-            analysis.aiRecommendations.forEach(rec => {
+            analysis.recommendations.forEach(rec => {
                 const recDiv = document.createElement('div');
-                recDiv.className = 'recommendation-item';
+                recDiv.className = 'ai-card';
                 recDiv.innerHTML = `
-                    <div class="recommendation-title">${rec.title}</div>
-                    <div>${rec.description}</div>
-                    <div class="roi-estimate">${rec.roi} | ${rec.timeline}</div>
+                    <div class="item-title">${rec.title}</div>
+                    <div class="item-description">${rec.description}</div>
+                    <div class="roi-badge">${rec.roi}</div>
                 `;
                 aiRecommendations.appendChild(recDiv);
             });
@@ -898,13 +916,12 @@
             solutionsList.innerHTML = '';
             analysis.solutions.forEach(solution => {
                 const solutionDiv = document.createElement('div');
-                solutionDiv.className = 'solution-item';
+                solutionDiv.className = 'item-card';
                 solutionDiv.innerHTML = `
-                    <div class="solution-title">${solution.title}</div>
-                    <div class="solution-description">${solution.description}</div>
-                    <div style="margin-top: 10px; font-size: 0.9em; color: #666;">
-                        <strong>Timeline:</strong> ${solution.timeline} | 
-                        <strong>Priority:</strong> ${solution.priority.toUpperCase()}
+                    <div class="item-title">Phase ${solution.phase}: ${solution.title}</div>
+                    <div class="item-description">${solution.description}</div>
+                    <div style="margin-top: 0.5rem; color: #64748b; font-size: 0.9rem;">
+                        <strong>Timeline:</strong> ${solution.timeline}
                     </div>
                 `;
                 solutionsList.appendChild(solutionDiv);
@@ -912,154 +929,219 @@
         }
 
         function exportReport() {
-            const companyName = document.getElementById('companyName').value || 'Enterprise';
-            const reportContent = generateEnterpriseReportContent();
+            const companyName = document.getElementById('companyName').value || 'Your Company';
+            const healthScore = document.getElementById('healthScore').textContent;
+            const aiReadiness = document.getElementById('aiReadiness').textContent;
+            const riskLevel = document.getElementById('riskLevel').textContent;
+            const growthPotential = document.getElementById('growthPotential').textContent;
             
-            const blob = new Blob([reportContent], { type: 'text/plain' });
+            // Generate comprehensive report with actual data
+            const reportContent = `
+BUSINESS INTELLIGENCE ANALYSIS REPORT
+=====================================
+
+Company: ${companyName}
+Report Date: ${new Date().toLocaleDateString()}
+Analysis Time: ${new Date().toLocaleTimeString()}
+Generated by: LaNier Business Intelligence Consulting
+
+EXECUTIVE SUMMARY
+=================
+Business Health Score: ${healthScore}
+AI Readiness Level: ${aiReadiness}
+Risk Assessment: ${riskLevel}
+Growth Potential: ${growthPotential}
+
+BUSINESS PROFILE
+================
+Industry: ${document.getElementById('industry').value || 'Not specified'}
+Company Size: ${document.getElementById('employeeCount').value || 'Not specified'}
+Annual Revenue: ${document.getElementById('annualRevenue').value || 'Not specified'}
+Technology Level: ${document.getElementById('currentTech').value || 'Not specified'}
+Main Challenge: ${document.getElementById('mainChallenges').value || 'Not specified'}
+
+STRATEGIC CHALLENGES IDENTIFIED
+===============================
+${Array.from(document.querySelectorAll('#problemsList .item-card')).map((item, index) => `
+${index + 1}. ${item.querySelector('.item-title').textContent}
+   Analysis: ${item.querySelector('.item-description').textContent}
+   Impact Level: ${item.querySelector('.badge').textContent}
+`).join('')}
+
+AI-POWERED SOLUTIONS RECOMMENDED
+================================
+${Array.from(document.querySelectorAll('#aiRecommendations .ai-card')).map((item, index) => `
+${index + 1}. ${item.querySelector('.item-title').textContent}
+   Description: ${item.querySelector('.item-description').textContent}
+   Expected Return: ${item.querySelector('.roi-badge').textContent}
+`).join('')}
+
+IMPLEMENTATION ROADMAP
+======================
+${Array.from(document.querySelectorAll('#solutionsList .item-card')).map((item, index) => `
+${item.querySelector('.item-title').textContent}
+Description: ${item.querySelector('.item-description').textContent}
+${item.querySelector('div:last-child').textContent}
+`).join('\n\n')}
+
+COMPETITIVE ADVANTAGE ANALYSIS
+==============================
+• Current Market Position: Based on your technology level and industry benchmarks
+• AI Implementation Opportunity: Significant potential for operational improvement
+• Recommended Investment Timeline: Phased approach over 6-24 months
+• Expected Business Impact: Measurable improvements in efficiency and profitability
+
+NEXT STEPS & RECOMMENDATIONS
+============================
+1. Schedule detailed consultation to discuss findings
+2. Develop customized implementation strategy
+3. Identify pilot program opportunities
+4. Create timeline for AI solution deployment
+5. Establish success metrics and ROI tracking
+
+CONSULTATION SCHEDULING
+======================
+Ready to discuss your analysis and next steps?
+📅 Schedule your consultation: https://calendly.com/lanierbusinessintelligence
+📧 Questions? Email: LaNierBIC@outlook.com
+
+CONFIDENTIALITY NOTICE
+======================
+This analysis is prepared exclusively for ${companyName} and contains confidential 
+business intelligence. Please do not distribute without authorization.
+
+---
+LaNier Business Intelligence Consulting™
+"Transforming businesses through intelligent AI implementation"
+Report ID: ${Date.now()}
+            `.trim();
+            
+            // Create and download the file
+            const blob = new Blob([reportContent], { type: 'text/plain;charset=utf-8' });
             const url = URL.createObjectURL(blob);
             const a = document.createElement('a');
             a.href = url;
-            a.download = `${companyName}_Enterprise_AI_Analysis_Report.txt`;
+            a.download = `${companyName.replace(/[^a-zA-Z0-9]/g, '_')}_Business_Intelligence_Report_${new Date().toISOString().split('T')[0]}.txt`;
+            document.body.appendChild(a);
             a.click();
+            document.body.removeChild(a);
             URL.revokeObjectURL(url);
+            
+            // Show success message
+            alert('✅ Your comprehensive business intelligence report has been downloaded! Check your Downloads folder.');
         }
 
         function generateProposal() {
-            const companyName = document.getElementById('companyName').value || 'Your Enterprise';
-            const proposalContent = generateEnterpriseProposalContent(companyName);
+            const companyName = document.getElementById('companyName').value || 'Your Company';
             
-            const blob = new Blob([proposalContent], { type: 'text/plain' });
+            // Generate a comprehensive proposal document
+            const proposalContent = `
+STRATEGIC AI TRANSFORMATION PROPOSAL
+====================================
+
+FOR: ${companyName}
+DATE: ${new Date().toLocaleDateString()}
+PREPARED BY: LaNier Business Intelligence Consulting
+
+EXECUTIVE SUMMARY
+=================
+Based on your business intelligence assessment, we've identified significant opportunities 
+for AI-driven transformation that can deliver measurable ROI within 6-12 months.
+
+CURRENT STATE ANALYSIS
+======================
+Business Health Score: ${document.getElementById('healthScore').textContent}
+AI Readiness: ${document.getElementById('aiReadiness').textContent}
+Risk Level: ${document.getElementById('riskLevel').textContent}
+Growth Potential: ${document.getElementById('growthPotential').textContent}
+
+PROPOSED SOLUTIONS
+==================
+${Array.from(document.querySelectorAll('#aiRecommendations .ai-card')).map((item, index) => `
+Solution ${index + 1}: ${item.querySelector('.item-title').textContent}
+• Implementation: ${item.querySelector('.item-description').textContent}
+• Expected ROI: ${item.querySelector('.roi-badge').textContent}
+• Timeline: 6-16 weeks
+`).join('\n')}
+
+INVESTMENT & ROI PROJECTION
+===========================
+Phase 1 Investment: $25,000 - $75,000
+Phase 2 Investment: $50,000 - $150,000
+Phase 3 Investment: $75,000 - $200,000
+
+Expected Annual Benefits:
+• Operational Efficiency: 15-40% improvement
+• Cost Reduction: $100K - $500K annually
+• Revenue Growth: 10-35% increase
+• Competitive Advantage: Market leadership positioning
+
+Total ROI: 300-800% over 24 months
+
+IMPLEMENTATION TIMELINE
+=======================
+${Array.from(document.querySelectorAll('#solutionsList .item-card')).map((item, index) => `
+${item.querySelector('.item-title').textContent}
+${item.querySelector('.item-description').textContent}
+${item.querySelector('div:last-child').textContent}
+`).join('\n\n')}
+
+RISK MITIGATION
+===============
+• Phased approach minimizes implementation risk
+• Pilot programs validate solutions before full deployment
+• Regular checkpoints ensure project alignment
+• Proven methodologies with established success rates
+
+WHY LANIER BUSINESS INTELLIGENCE?
+=================================
+✓ Specialized in AI transformation for growing businesses
+✓ Proven track record with 200-800% ROI results
+✓ Comprehensive support from assessment to implementation
+✓ Ongoing optimization and performance monitoring
+
+NEXT STEPS
+==========
+1. Review this proposal with your leadership team
+2. Schedule detailed consultation to discuss implementation
+3. Customize solution package for your specific needs
+4. Begin with pilot program for immediate results
+
+READY TO GET STARTED?
+=====================
+📅 Schedule your consultation: https://calendly.com/lanierbusinessintelligence
+📧 Questions? Email: LaNierBIC@outlook.com
+
+This proposal is valid for 30 days and includes complimentary consultation.
+
+---
+LaNier Business Intelligence Consulting™
+Proposal ID: ${Date.now()}
+            `.trim();
+            
+            // Create and download the proposal
+            const blob = new Blob([proposalContent], { type: 'text/plain;charset=utf-8' });
             const url = URL.createObjectURL(blob);
             const a = document.createElement('a');
             a.href = url;
-            a.download = `${companyName}_Enterprise_AI_Transformation_Proposal.txt`;
+            a.download = `${companyName.replace(/[^a-zA-Z0-9]/g, '_')}_AI_Transformation_Proposal_${new Date().toISOString().split('T')[0]}.txt`;
+            document.body.appendChild(a);
             a.click();
+            document.body.removeChild(a);
             URL.revokeObjectURL(url);
-        }
-
-        function scheduleConsultation() {
-            window.open('https://calendly.com/lanierbusinessintelligence/complimentary-business-diagnostic-session', '_blank');
-        }
-
-        function showPrivacyPolicy() {
-            const privacyContent = `
-LANIER BUSINESS INTELLIGENCE CONSULTING
-PRIVACY POLICY & DATA PROTECTION
-
-COMMITMENT TO PRIVACY
-======================
-LaNier Business Intelligence Consulting is committed to protecting the privacy and confidentiality of all client information. This policy outlines our comprehensive approach to data protection and privacy.
-
-DATA COLLECTION & USAGE
-========================
-• Business diagnostic information is processed locally in your browser
-• No sensitive business data is transmitted to external servers
-• Company information entered is used solely for analysis purposes
-• Contact information is used only for follow-up consultations
-
-DATA SECURITY MEASURES
-=======================
-• All analysis performed client-side (no cloud processing)
-• Industry-standard encryption for any data transmission
-• Secure communication channels for all client interactions
-• Regular security audits and compliance reviews
-
-CONFIDENTIALITY GUARANTEES
-===========================
-• All business information treated as strictly confidential
-• Non-disclosure agreements available upon request
-• Client data never shared with third parties
-• Secure deletion of sensitive information upon request
-
-COMPLIANCE STANDARDS
-====================
-• GDPR compliant data handling procedures
-• SOC 2 security framework adherence
-• Industry-specific regulatory compliance
-• Regular privacy policy updates and improvements
-
-CLIENT RIGHTS
-=============
-• Right to data access and portability
-• Right to correction or deletion
-• Right to restrict processing
-• Right to withdraw consent at any time
-
-For questions about privacy or data protection:
-Contact: LaNierBIC@outlook.com
-Phone: (973) 558-9043
-
-Last Updated: ${new Date().toLocaleDateString()}
-            `;
             
-            alert(privacyContent);
+            // Show success message
+            alert('📄 Your customized AI transformation proposal has been downloaded! Please review and schedule a consultation to discuss next steps.');
         }
 
-        function showDataSecurity() {
-            const securityContent = `
-LANIER BUSINESS INTELLIGENCE CONSULTING
-ENTERPRISE DATA SECURITY FRAMEWORK
-
-SECURITY ARCHITECTURE
-======================
-• Client-side processing eliminates data transmission risks
-• Zero-trust security model implementation
-• End-to-end encryption for all communications
-• Multi-factor authentication for consultant access
-
-TECHNICAL SAFEGUARDS
-====================
-• Browser-based analysis (no server-side data storage)
-• Secure HTTPS connections for all interactions
-• Regular security vulnerability assessments
-• Automated security monitoring and alerting
-
-PHYSICAL SECURITY
-=================
-• Secure facilities with controlled access
-• Encrypted storage for any physical documents
-• Secure disposal of confidential materials
-• Background-checked personnel only
-
-BUSINESS CONTINUITY
-===================
-• Disaster recovery procedures in place
-• Regular backup and restoration testing
-• Incident response protocols established
-• 24/7 security monitoring capabilities
-
-INDUSTRY CERTIFICATIONS
-========================
-• ISO 27001 security management compliance
-• SOC 2 Type II audit certification
-• Regular third-party security assessments
-• Continuous security training for all staff
-
-INCIDENT RESPONSE
-=================
-• Immediate notification procedures
-• Forensic investigation capabilities
-• Remediation and recovery protocols
-• Regulatory compliance reporting
-
-Your business security is our highest priority.
-
-Contact Security Team: LaNierBIC@outlook.com
-Emergency Security Line: (973) 558-9043
-            `;
-            
-            alert(securityContent);
-        }
-
-        function generateEnterpriseReportContent() {
-            const companyName = document.getElementById('companyName').value || 'Enterprise';
+        function generateReportContent(companyName) {
             const healthScore = document.getElementById('healthScore').textContent;
             const aiReadiness = document.getElementById('aiReadiness').textContent;
             const riskLevel = document.getElementById('riskLevel').textContent;
             const growthPotential = document.getElementById('growthPotential').textContent;
             
             return `
-ENTERPRISE AI TRANSFORMATION ANALYSIS
+BUSINESS INTELLIGENCE ANALYSIS REPORT
 =====================================
 
 Company: ${companyName}
@@ -1069,196 +1151,83 @@ Generated by: LaNier Business Intelligence Consulting
 EXECUTIVE SUMMARY
 =================
 Business Health Score: ${healthScore}
-AI Transformation Potential: ${aiReadiness}
-Competitive Risk Assessment: ${riskLevel}
-Revenue Growth Potential: ${growthPotential}
+AI Readiness Level: ${aiReadiness}
+Risk Assessment: ${riskLevel}
+Growth Potential: ${growthPotential}
 
-STRATEGIC CHALLENGES IDENTIFIED
-===============================
-${Array.from(document.querySelectorAll('.problem-item')).map((item, index) => `
-${index + 1}. ${item.querySelector('.problem-title').textContent}
-   ${item.querySelector('.problem-description').textContent}
-   Impact Level: ${item.querySelector('.impact-badge').textContent}
+KEY FINDINGS
+============
+${Array.from(document.querySelectorAll('#problemsList .item-card')).map((item, index) => `
+${index + 1}. ${item.querySelector('.item-title').textContent}
+   ${item.querySelector('.item-description').textContent}
 `).join('')}
 
-AI TRANSFORMATION SOLUTIONS
-============================
-${Array.from(document.querySelectorAll('.recommendation-item')).map((item, index) => `
-${index + 1}. ${item.querySelector('.recommendation-title').textContent}
-   ${item.querySelector('.recommendation-item div:nth-child(2)').textContent}
-   Expected ROI: ${item.querySelector('.roi-estimate').textContent}
+RECOMMENDED SOLUTIONS
+====================
+${Array.from(document.querySelectorAll('#aiRecommendations .ai-card')).map((item, index) => `
+${index + 1}. ${item.querySelector('.item-title').textContent}
+   ${item.querySelector('.item-description').textContent}
+   Expected ROI: ${item.querySelector('.roi-badge').textContent}
 `).join('')}
 
-STRATEGIC IMPLEMENTATION ROADMAP
-=================================
-${Array.from(document.querySelectorAll('.solution-item')).map((item, index) => `
-${index + 1}. ${item.querySelector('.solution-title').textContent}
-   ${item.querySelector('.solution-description').textContent}
-   ${item.querySelector('.solution-item div:last-child').textContent}
-`).join('')}
-
-COMPETITIVE ADVANTAGE ASSESSMENT
-================================
-• AI implementation provides 12-24 month competitive moat
-• Expected market leadership position in 18-36 months
-• Estimated revenue impact: 25-75% growth within 24 months
-• Cost optimization potential: 15-40% operational savings
+IMPLEMENTATION ROADMAP
+======================
+${Array.from(document.querySelectorAll('#solutionsList .item-card')).map((item, index) => `
+${item.querySelector('.item-title').textContent}
+${item.querySelector('.item-description').textContent}
+${item.querySelector('div:last-child').textContent}
+`).join('\n')}
 
 NEXT STEPS
 ==========
-1. Schedule executive stakeholder alignment meeting
-2. Conduct comprehensive AI readiness assessment
-3. Develop customized transformation roadmap
-4. Initiate pilot program with highest-ROI opportunities
-5. Scale successful implementations enterprise-wide
+1. Schedule consultation to discuss findings
+2. Develop customized implementation plan
+3. Begin pilot program with highest-ROI opportunities
+4. Scale successful solutions across organization
 
-Contact your Enterprise AI Strategy Consultant for immediate implementation support.
-
-LaNier Business Intelligence Consulting
-Enterprise AI Transformation Division
-LaNierBIC@outlook.com | (973) 558-9043
-            `.trim();
-        }
-
-        function generateEnterpriseProposalContent(companyName) {
-            const healthScore = document.getElementById('healthScore').textContent;
-            const aiReadiness = document.getElementById('aiReadiness').textContent;
-            
-            return `
-ENTERPRISE AI TRANSFORMATION PROPOSAL
-=====================================
-
-FOR: ${companyName}
-DATE: ${new Date().toLocaleDateString()}
-PREPARED BY: LaNier Business Intelligence Consulting
-
-EXECUTIVE SUMMARY
-=================
-Based on our comprehensive enterprise AI analysis, ${companyName} demonstrates significant potential for AI-driven business transformation. With a current business health score of ${healthScore} and AI readiness level of ${aiReadiness}, we've identified strategic opportunities to enhance operational efficiency, accelerate growth, and establish sustainable competitive advantages.
-
-This proposal represents a comprehensive AI transformation strategy valued at $2M+ in strategic consulting, provided as part of our Fortune 500 case study program.
-
-PROPOSED ENTERPRISE SOLUTIONS
-==============================
-
-Phase 1: AI Foundation & Strategic Alignment (Weeks 1-8)
-- Executive AI strategy development
-- Enterprise AI infrastructure assessment
-- Cross-functional team establishment
-- Quick-win pilot implementations
-Investment: $150,000 - $300,000
-
-Phase 2: Core AI Platform Implementation (Weeks 9-16)
-- Enterprise AI platform deployment
-- Legacy system integration
-- Advanced analytics implementation
-- Performance monitoring establishment
-Investment: $300,000 - $600,000
-
-Phase 3: Advanced Optimization & Innovation (Weeks 17-24)
-- Predictive analytics deployment
-- Intelligent automation workflows
-- Competitive intelligence systems
-- AI innovation lab establishment
-Investment: $400,000 - $800,000
-
-Phase 4: Enterprise-Wide Scaling (Weeks 25-52)
-- Multi-business unit deployment
-- Advanced AI capabilities development
-- Continuous optimization protocols
-- Strategic partnership integration
-Investment: $500,000 - $1,000,000
-
-INVESTMENT OPTIONS
-==================
-We offer three strategic pathways for enterprise implementation:
-
-Option 1: Comprehensive Transformation
-- Complete enterprise AI transformation
-- Maximum competitive advantage acceleration
-- C-suite strategic partnership
-- Total Investment: $1.35M - $2.7M
-
-Option 2: Phased Strategic Implementation
-- Quarterly milestone-based deployment
-- Risk-minimized approach with proven ROI
-- Flexible scaling based on performance
-- Total Investment: $1M - $2M
-
-Option 3: Performance Partnership Model
-- Shared risk and reward structure
-- Success-based compensation alignment
-- Long-term strategic partnership
-- Investment based on performance metrics
-
-EXPECTED ENTERPRISE OUTCOMES
-============================
-• 40-75% improvement in operational efficiency
-• 25-60% revenue growth acceleration
-• 500-1500% ROI within 18-24 months
-• Market leadership position establishment
-• Sustainable competitive moat development
-• Innovation capability enhancement
-
-COMPETITIVE ADVANTAGE TIMELINE
-===============================
-• Month 3: Initial competitive advantages visible
-• Month 6: Significant operational improvements
-• Month 12: Market leadership indicators
-• Month 18: Sustained competitive moat
-• Month 24: Industry benchmark performance
-
-RISK MITIGATION STRATEGY
-========================
-• Phased implementation minimizes enterprise risk
-• Pilot programs validate approaches before scaling
-• Continuous performance monitoring ensures ROI
-• Change management protocols ensure adoption
-• Executive steering committee maintains alignment
-
-NEXT STEPS
-==========
-1. Schedule C-suite strategic alignment session
-2. Conduct comprehensive enterprise assessment
-3. Develop customized transformation roadmap
-4. Establish governance and success metrics
-5. Initiate Phase 1 implementation
-
-Contact us immediately to begin your enterprise AI transformation:
+Contact LaNier Business Intelligence Consulting for implementation support:
 📧 LaNierBIC@outlook.com
-📞 (973) 558-9043
+📅 https://calendly.com/lanierbusinessintelligence
 
-This proposal is valid for 45 days and includes complimentary strategic consultation.
-
-LaNier Business Intelligence Consulting™
-Enterprise AI Transformation Division
-"Transforming Fortune 500 enterprises through intelligent AI implementation"
+Thank you for choosing LaNier Business Intelligence Consulting.
             `.trim();
         }
 
-        // Add demo functionality
-        function loadEnterpriseDemo() {
-            document.getElementById('companyName').value = 'Fortune Global Manufacturing Corp';
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Demo data loader
+        function loadDemo() {
+            document.getElementById('companyName').value = 'TechCorp Industries';
             document.getElementById('industry').value = 'manufacturing';
-            document.getElementById('employeeCount').value = '2000+';
-            document.getElementById('annualRevenue').value = '5b+';
+            document.getElementById('employeeCount').value = '201-500';
+            document.getElementById('annualRevenue').value = '50m-500m';
             document.getElementById('currentTech').value = 'intermediate';
-            document.getElementById('mainChallenges').value = 'Multi-facility coordination, predictive maintenance gaps, supply chain optimization, competitive pressure from AI-enabled competitors';
-            document.getElementById('customerAcquisition').value = 'enterprise-sales';
-            document.getElementById('dataCollection').value = 'advanced';
+            document.getElementById('mainChallenges').value = 'Need to improve operational efficiency and implement predictive maintenance systems';
         }
 
-        // Add demo button
+        // Add demo button for testing
         window.addEventListener('load', function() {
             const demoBtn = document.createElement('button');
-            demoBtn.textContent = '🎯 Load Fortune 500 Demo';
-            demoBtn.className = 'export-btn';
-            demoBtn.style.margin = '10px auto';
+            demoBtn.textContent = '🎯 Load Demo Data';
+            demoBtn.className = 'secondary-button';
+            demoBtn.style.margin = '1rem auto';
             demoBtn.style.display = 'block';
-            demoBtn.onclick = loadEnterpriseDemo;
+            demoBtn.onclick = loadDemo;
             
-            const form = document.querySelector('.business-form');
-            form.appendChild(demoBtn);
+            const formContainer = document.querySelector('.form-container');
+            formContainer.appendChild(demoBtn);
         });
     </script>
 </body>
